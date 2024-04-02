@@ -125,6 +125,7 @@ table tr td{
 }
 
 @media screen and (max-width: 950px) {
+
    .text{
       padding: 0;
       display: flex;
@@ -155,4 +156,5 @@ table tr td{
 }
 .image img{
     height: 20px;
+}
 }
