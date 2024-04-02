@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(59, 4, 59);
+    height: 4rem;
+    /* align-items: center; */
+    padding-top: 15px;
+    width: 100%;
+   
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.logo{
+    padding-left: 20px;
+    height: 5px;
+    height: 20px;
+    padding-bottom: 5px;
+}
+.logo img{
+    height: 3rem;
+    
+}
+.circled{
+    padding-right: 20px;
+}
+.circled img{
+    height: 3rem;
+}
+.deartosh p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10rem;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.deartosh{
+    padding-top: 20px;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro{
+    height: 20vh;
+}
+
+.btn button{
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+}
+
+.btn{
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.btnn{
+    cursor: pointer;
+}
+
+.btn img{
+    height: 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt{
+    width: 30%;
+}
+
+.contact, .talktotosh{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editt{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.det{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.acct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FAFAFA;
+    padding: 15px;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer img{
+    height: 30px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:950px) {
+    .abt, .det{
+        width: 80%;
+    }
+
+    .deartosh p{
+        padding-left: 40px;
+    }
+}
