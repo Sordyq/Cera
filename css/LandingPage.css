@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav{
+    background-color: #240737;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.nav1 h1{
+    color: #FAFAFA;
+}
+.nav1 img{
+    width: 20%;
+}
+.nav2{
+    display: flex;
+}
+.menu-image{
+    height: 5vh;
+}
+.text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 10px;
+}
+.text p{
+    width: 80%;
+}
+.sect1{
+    display: flex;
+}
+
+.image img{
+    height: 40px;
+} 
+.image{
+    display: flex;
+    gap: 90px;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+    }
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.sect2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding-left: 70px; */
+}
+ .desc, .rate, .date{
+    padding-right: 300px;
+    text-align: left;
+    padding-top: 10px;
+} 
+table tr td{
+    padding-top: 10px;
+}  
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 10px;
+}
+.referrals{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 10px;
+}
+.Community{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.notification{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 10px;
+}
+.support{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 10px;
+}
+
+@media screen and (max-width: 950px) {
+   .text{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+   }
+   .two{
+    margin-bottom: 0px;
+    margin-top: 5px;
+   }
+   .text p{
+    width: 60%;
+    text-align: center;
+}
+.sect2{
+    width: 100%;
+}
+.desc, .rate, .date{
+    padding-right: 30px;
+    padding-top: 5px;
+} 
+.image{
+    display: flex;
+    gap: 5px;
+    padding: 0 0px;
+    margin-top: 40px;
+    padding: 5px;
+}
+.image img{
+    height: 20px;
+}
