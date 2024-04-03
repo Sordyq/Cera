@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color:#240737;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hero{
+    font-family:sans-serif;
+    font-weight:100;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+    height: 80vh;
+}
+button{
+    background-color:#A21EF2;
+    width: 205px;
+    height: 48px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.text{
+   margin-top: 40px;
+   margin-left: 200px;
+}
+.sheep{
+    display: flex;
+    flex-direction: row;
+    gap: 175px;
+}
+.help{
+    width: 205px;
+    height: 48px;
+    border-radius: 20px;
+    border: none;
+    background-color:#240737;
+
+}
+.btns1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 100px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 100px;
+    position: relative;
+    bottom: 60px;
+    right: 70px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    background-color: #FAFAFA;
+    padding: 10px;
+}
+.footer img{
+    height: 50px;
+}
+
+
+
+

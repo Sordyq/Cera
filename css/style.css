@@ -10,7 +10,7 @@ nav{
     justify-content: space-around;
     background: rgba(36, 7, 55, 1);  
 }
-@keyframes mk {
+/* @keyframes mk {
     0%, 25%{
         background-color: rgb(0, 255, 0);
 
@@ -19,7 +19,7 @@ nav{
         background-color:black ;
         
     }
-}
+} */
 .butt3{
     border: none;
     background: none;
@@ -35,9 +35,9 @@ nav{
 }
 .board2 button{
     border: none;
-    background: none;
+    background: white;
     cursor: pointer;
-    animation: mk infinite; 
+    /* animation: mk infinite;  */
 }
 .board2 img{
     animation: 1s mk infinite; 
@@ -133,9 +133,8 @@ nav{
 }
 .Coin{
     display: flex;
-    gap: 150px;
     align-items: center;
-   justify-content: space-around;
+    gap: 150px;
 }
 .Coin1{
     display: flex;
@@ -161,10 +160,63 @@ nav{
     color: rgba(254, 105, 61, 1);
 
 }
+.Coin2{
+    width: 150px;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 5px 5px 50px grey;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    display: none;
+    justify-content: right;
+    position: absolute;
+    background-color: white;
+    left: 855px;
 
-
-
+}
+.yu{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.yo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-transform: capitalize;
+}
+.toggle{
+    display: flex;
+}
+#arrow {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%);
+    transition: filter 0.5s ease; 
+  }
+  #arrow.blinking {
+    animation: blink-animation 1s infinite;
+  }
+  @keyframes blink-animation {
+    50% {
+      opacity: 0;
+    }
+  }
 @media screen and (max-width: 950px) {
+    .Coin{
+        gap: 70px;
+    }
     .invite{
         width: 100%;
     }
@@ -174,5 +226,12 @@ nav{
     .Home{
         gap: 15px;
     }
-    
+    .Coin2{
+        width: 190px;
+    }
+    .all{
+        position: absolute;
+        left: 185px;
+    }
+
 }
