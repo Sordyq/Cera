@@ -1,16 +1,47 @@
 const arrow = document.getElementById('arrow');
+const blinkButton = document.getElementById('blinkButton');
+const minedCoinsDisplay = document.getElementById('minedCoins');
 let blinkingInterval;
+let miningInterval;
+let minedCoins = 0;
+let elapsedTimeInSeconds = 0;
+let isMining = false;
 
-arrow.addEventListener('click', () => {
-  if (arrow.classList.contains('blinking')) {
-    clearInterval(blinkingInterval);
-    arrow.classList.remove('blinking');
-    arrow.style.filter = 'grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%)';
-  } else {
+function startMining() {
+  if (!isMining) {
+    isMining = true;
     arrow.classList.add('blinking');
-    blinkingInterval = setInterval(() => {
-      arrow.style.filter = arrow.style.filter === 'none' ? 'grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%)' : 'none';
+    miningInterval = setInterval(() => {
+      elapsedTimeInSeconds++;
+      updateMinedCoins();
+      if (elapsedTimeInSeconds >= 3600) {
+        stopMining();
+        if (minedCoins >= 0.5) {
+          blinkButton.disabled = false;
+        }
+      }
     }, 1000);
+  }
+}
+
+function stopMining() {
+  clearInterval(blinkingInterval);
+  clearInterval(miningInterval);
+  isMining = false;
+}
+
+function updateMinedCoins() {
+  const hours = Math.floor(elapsedTimeInSeconds / 3600);
+  const minutes = Math.floor((elapsedTimeInSeconds % 3600) / 60);
+  const seconds = elapsedTimeInSeconds % 60;
+  minedCoins = (hours * 0.5) + (minutes * (0.5 / 60)) + (seconds * (0.5 / 3600));
+  minedCoinsDisplay.textContent = minedCoins.toFixed(4);
+}
+
+blinkButton.addEventListener('click', () => {
+  if (!isMining) {
+    startMining();
+    blinkButton.disabled = true;
   }
 });
 function dropdown(){

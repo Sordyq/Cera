@@ -10,16 +10,6 @@ nav{
     justify-content: space-around;
     background: rgba(36, 7, 55, 1);  
 }
-/* @keyframes mk {
-    0%, 25%{
-        background-color: rgb(0, 255, 0);
-
-    }
-    50%, 100%{
-        background-color:black ;
-        
-    }
-} */
 .butt3{
     border: none;
     background: none;
@@ -197,13 +187,14 @@ nav{
 }
 .toggle{
     display: flex;
-}
+} 
 #arrow {
     width: 50px;
     height: 50px;
+    filter: invert(79%) sepia(80%) saturate(2692%) hue-rotate(283deg) brightness(95%) contrast(91%);
+  }
+  #blinkButton {
     cursor: pointer;
-    filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%);
-    transition: filter 0.5s ease; 
   }
   #arrow.blinking {
     animation: blink-animation 1s infinite;
@@ -232,6 +223,16 @@ nav{
     .all{
         position: absolute;
         left: 185px;
+    }
+    .board2{
+        width: 150px;
+        flex-direction: column;
+    }
+    .board1{
+        align-items: center;
+    }
+    .lala{
+        width: 180px;
     }
 
 }
